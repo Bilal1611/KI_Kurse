@@ -8,5 +8,6 @@ git commit -m Aktualisiert
 git push origin master
 Erstelle einer Bash Script
 
+git config --global credential.helper 'cache --timeout 7200'
 Username for 'https://github.com': <USERNAME>
 Password for 'https://USERNAME@github.com': <PASSWORD>

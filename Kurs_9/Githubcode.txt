@@ -1,0 +1,9 @@
+bilal@bilal-OpenCV:~/KI_Kurse$ git remote add origin https://github.com/Bilal16
+nano Githubcode.txt 
+hallo
+echo TextinGithabcode.TxtEinfügen >> Githubcode.txt
+echo touch Githubcode.txt: Erstellt die Datei Githubcode.txt
+git add Kurs_9/
+git commit -m Aktualisiert
+git push origin master
+Erstelle einer Bash Script

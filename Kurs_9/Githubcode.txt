@@ -6,4 +6,11 @@ echo touch Githubcode.txt: Erstellt die Datei Githubcode.txt
 git add Kurs_9/
 git commit -m Aktualisiert
 git push origin master
-Erstelle einer Bash Script
+Erstelle einer Bash Script: touch Dateiname.sh
+Ausführbar machen: chmod +x Dateiname.sh
+In Bashskript Shebang einfügen:#!/bin/bash
+Passworteingabe in git automatisieren: 
+git config --global credential.helper store
+git config --global credential.helper 'cache --timeout 7200'
+Oder ohne Zeitbegrenzung:git config --global credential.helper store
+

@@ -13,4 +13,4 @@ Passworteingabe in git automatisieren:
 git config --global credential.helper store
 git config --global credential.helper 'cache --timeout 7200'
 Oder ohne Zeitbegrenzung:git config --global credential.helper store
-
+git clone https://github.com/Bilal1611/MindeMapes

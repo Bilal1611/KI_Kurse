@@ -13,3 +13,6 @@ Username for 'https://github.com': <USERNAME>
 Password for 'https://USERNAME@github.com': <PASSWORD>
 Username for 'https://github.com': <USERNAME>
 Password for 'https://USERNAME@github.com': <PASSWORD>
+mkdir nameEinesOrdners
+git mv altesFile neuesFile
+git commit -m "neuesFile"

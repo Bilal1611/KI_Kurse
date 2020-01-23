@@ -9,4 +9,8 @@ args = vars(ap.parse_args())
 image = cv2.imread(args["image"])
 # Hier werden zwei Array addiert.
 print("max of 255 by Cv2: {}".format(cv2.add(np.uint8([200]), np.uint8([100]))))
-print("min of 255 by Cv2: {}".format(cv2.subtract(np.uint8([50]), np.uint8([100]))))
+print("min of 0 by Cv2: {}".format(cv2.subtract(np.uint8([50]), np.uint8([100]))))
+
+
+print("wrap of max by np: {}".format(np.uint8([200]) + np.uint8([100])))
+print("wrap of max by np: {}".format(np.uint8([50]) - np.uint8([100])))

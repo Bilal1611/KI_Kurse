@@ -20,8 +20,10 @@ print(R)
 #GN = G/G.max()
 #G = GN*255
 
-#RN = R/R.max()
-#R = RN * 255
+
+RN = R/R.max()
+print(RN)
+R = RN * 255
 
 #print(R)
 

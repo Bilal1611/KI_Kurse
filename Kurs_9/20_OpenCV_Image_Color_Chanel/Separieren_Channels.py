@@ -13,20 +13,20 @@ cv2.imshow("Orginal", image)
 
 # Kanäle trennen
 (B,G,R) = cv2.split(image)
-BN = B/np.linalg.norm(B)
+BN = 255/B.max()
 B = BN
 
-GN = G/np.linalg.norm(G)
+GN = 255/G.max
 G = GN
 
-RN = R/np.linalg.norm(R)
+RN = 255/R.max()
 R = RN
 
 
-cv2.imwrite("Test_Rot-Grue Normalized.jpg", cv2.subtract(np.uint8(R),np.uint8(G)))
-cv2.imwrite("Test_Gruen-Rot Normalized.jpg", cv2.subtract(np.uint8(G),np.uint8(R)))
-cv2.imwrite("Test_Blau-Rot Normalized.jpg", cv2.subtract(np.uint8(B),np.uint8(R)))
-cv2.imwrite("Test_Rot-Blau Normalized.jpg", cv2.subtract(np.uint8(R),np.uint8(B)))
+cv2.imwrite("Test_Rot-Grue Normalized_mit_max .jpg", cv2.subtract(np.uint8(R),np.uint8(G)))
+cv2.imwrite("Test_Gruen-Rot Normalized_mit_max.jpg", cv2.subtract(np.uint8(G),np.uint8(R)))
+cv2.imwrite("Test_Blau-Rot Normalized_mit_max.jpg", cv2.subtract(np.uint8(B),np.uint8(R)))
+cv2.imwrite("Test_Rot-Blau Normalized_mit_max.jpg", cv2.subtract(np.uint8(R),np.uint8(B)))
 
 
 

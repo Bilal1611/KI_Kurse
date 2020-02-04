@@ -13,6 +13,8 @@ image = cv2.imread(args["image"])
 cv2.imshow("RGB Colour space", image)
 #cv2.waitKey(0)
 Bildname = args['image'][:-4]
+
+
 # RGB verwandeln zu Grau
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 cv2.imwrite(Bildname +"Grau"+ ".jpg", gray)

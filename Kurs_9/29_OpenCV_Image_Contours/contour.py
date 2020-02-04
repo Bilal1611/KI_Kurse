@@ -26,7 +26,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(gray, (5,5),0)
 #kernl = np.ones((5,5),np.float32)/25
 
-#blurred = cv2.filter2D(gray,-1, kernl)
+##blurred = cv2.filter2D(gray,-1, kernl)
 cv2.imshow("Gaussian Blurr", blurred)
 
 canny = cv2.Canny(blurred, 20, 40)
@@ -38,7 +38,7 @@ cv2.waitKey(0)
 (cnts,_) = cv2.findContours(canny.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 print("The number of coins in in the Image is: {}".format(len(cnts)))
 
-#erstelle eine Kopie
+#Erstelle eine Kopie
 
 contoursNr = image.copy()
 #print(cnts)

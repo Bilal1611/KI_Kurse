@@ -5,27 +5,27 @@ import argparse
 import cv2
 
 
-# fetching the arguments and save in dictionary
+# Abrufen der Argumente und Speichern im Wörterbuch
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required = True, help = "Enter path to the image")
 args = vars(ap.parse_args())
 
-# loading and converting the image into numpy array
+# Laden und Konvertieren des Bildes in ein Numpy-Array
 image = cv2.imread(args["image"])
 
-# Find all the faces in the image using the library
+# Finden Sie alle Gesichter im Bild mithilfe der Bibliothek
 face_locations = face_recognition.face_locations(image)
 
-# printing the number of items in the array
+# Gibt die Anzahl der Elemente im Array
 print("I found {} face(s) in this photograph".format(len(face_locations)))
 
 for face_location in face_locations:
 
-	#print location of each face in this image
+	#Gibt die Position jedes Gesichts in diesem Bild
 	top, right, bottom, left = face_location
 	print("A face is located at pixel location Top: {}, Left: {}, Bottom: {}, Right: {}".format(top, left, bottom, right))
 
-	#access and show each face in the image
+	#Zeigt das Gesicht im Bild 
 	face_image = image[top:bottom, left:right]
 	pil_image = Image.fromarray(face_image)
 	pil_image.show()

@@ -1,0 +1,42 @@
+  752  docker
+  762  which docker
+  782  apt-cache plicy docker-ce
+  783  apt-cache policy docker-ce
+  823  docker run CRC4Docker/
+  824  sudo apt-get install docker
+  825  docker
+  844  sudo apt-get install docker
+  848  sudo apt-get remove docker docker-engine docker.io containerd runc
+  853  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  855  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add 
+  856  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  858  sudo apt-get install docker-ce docker-ce-cli containerd.io
+  859  sudo docker run hello-world
+  865  docker run CRC4Docker
+  866  docker
+  867  docker run CRC4Docker
+  869  docker start crc4
+  870  sudo docker start crc4
+  871  docker container list
+  872  sudo docker container list
+  873  docker run crc4docker
+  874  sudo docker run crc4docker
+  875  docker run -d -p 443:8888 -p 6006:6006 -v CRC4Docker:/home/myimagery/ --name=crc4 mort/crc4docker 
+  876  sudo docker run -d -p 443:8888 -p 6006:6006 -v CRC4Docker:/home/myimagery/ --name=crc4 mort/crc4docker 
+  877  docker info
+  878  sudo docker info
+  879  sudo docker list
+  880  sudo docker container list
+  882  docker start crc4
+  883  sudo docker start crc4
+  885  docker ps
+  886  sudo docker ps
+  887  sudo docker stop crc4
+  888  sudo docker ps
+  889  sudo docker start crc4
+  890  sudo docker ps
+  892  history|grep *docker*
+  893  history|grep docker
+  894  sudo docker ps
+  895  history|grep docker>docker_codes.txt

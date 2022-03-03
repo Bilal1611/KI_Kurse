@@ -1,0 +1,1 @@
+docker run -d -p 443:8888 -p 6006:6006 -v \Users\bilal\Desktop\PythonProgramm\MortonCanty:/home/myimagery/ --name=crc4 mort/crc4docker
